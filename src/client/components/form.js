@@ -1,16 +1,14 @@
-import React, { useState } from "react";
-import "./style.scss";
+import React, { useState } from 'react';
+import './style.scss';
 
 const Form = () => {
-  const [value, setValue] = useState("");
-
-  const handleChange = event => {
-    const { value } = event.target;
-    setValue(value);
-  };
+  const [value, setValue] = useState('');
+  const handleChange = event => setValue(event.target.value);
 
   return (
-    <input type="text" value={value} className="hey" onChange={handleChange} />
+    <div>
+      <input type="text" value={value} className="hey" onChange={handleChange} />
+    </div>
   );
 };
 
