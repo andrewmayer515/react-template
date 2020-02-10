@@ -1,3 +1,10 @@
-.hey {
-  margin-left: 100px;
+div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+
+  span {
+    font-size: 30px;
+  }
 }

@@ -1,6 +1,6 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Form from "../components/form.js";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Form from '../components/form';
 
-const wrapper = document.getElementById("container");
-wrapper ? ReactDOM.render(<Form />, wrapper) : false;
+// eslint-disable-next-line no-undef
+ReactDOM.render(<Form />, document.getElementById('container'));

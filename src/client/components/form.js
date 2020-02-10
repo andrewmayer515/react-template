@@ -1,15 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './style.scss';
 
 const Form = () => {
-  const [value, setValue] = useState('');
-  const handleChange = event => setValue(event.target.value);
-
-  return (
-    <div>
-      <input type="text" value={value} className="hey" onChange={handleChange} />
-    </div>
-  );
+  return <span>React Template</span>;
 };
 
 export default Form;
