@@ -5,11 +5,9 @@ const App = () => {
   const [sha, updateSHA] = useState('');
   useEffect(() => {
     const fetchSHA = async () => {
-      fetch('/api/example')
-        .then(res => res.json())
-        .then(data => {
-          updateSHA(data.sha);
-        });
+      const response = await fetch('/api/example');
+      const json = await response.json();
+      updateSHA(json.sha);
     };
 
     fetchSHA();
