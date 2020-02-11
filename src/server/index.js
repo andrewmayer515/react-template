@@ -1,6 +1,6 @@
-const express = require('express');
-const path = require('path');
-const example = require('./routes/example');
+import express from 'express';
+import path from 'path';
+import example from './routes/example';
 
 const app = express();
 
@@ -19,4 +19,5 @@ app.get('*', (req, res) => {
 const port = process.env.PORT || 5000;
 app.listen(port);
 
+// eslint-disable-next-line no-console
 console.log(`Listening on ${port}`);
