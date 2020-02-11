@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Form from '../components/form';
+import App from '../components/App';
 
 // eslint-disable-next-line no-undef
-ReactDOM.render(<Form />, document.getElementById('container'));
+ReactDOM.render(<App />, document.getElementById('container'));

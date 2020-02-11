@@ -5,6 +5,9 @@
     "prettier/prettier": ["error"]
   },
   "plugins": ["json", "prettier"],
+  "env": {
+    "browser": true
+  },
   "overrides": [
     {
       "files": ["*.test.js"],

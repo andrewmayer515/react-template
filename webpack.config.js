@@ -38,4 +38,9 @@ module.exports = {
       filename: './index.html',
     }),
   ],
+  devServer: {
+    proxy: {
+      '/api': 'http://localhost:5000',
+    },
+  },
 };
