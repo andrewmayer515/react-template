@@ -4,12 +4,13 @@
   "description": "",
   "scripts": {
     "build:client": "webpack --mode production",
-    "build:server": "babel -d ./dist ./src/server -s",
+    "build:server": "babel -d ./lib ./src/server",
     "dev:client": "webpack-dev-server --mode development",
     "dev:server": "nodemon --exec babel-node --watch src/server src/server",
     "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\""
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "git-rev": "^0.2.1",
     "react": "^16.12.0",
