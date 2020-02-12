@@ -1,7 +1,7 @@
 {
   "name": "react-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "template project for react config with server",
   "scripts": {
     "build:client": "webpack --mode production",
     "build:server": "babel -d ./lib ./src/server",
