@@ -7,7 +7,9 @@
     "build:server": "babel -d ./lib ./src/server",
     "dev:client": "webpack-dev-server --mode development",
     "dev:server": "nodemon --exec babel-node --watch src/server src/server",
-    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\""
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "prestart": "npm run build:client && npm run build:server",
+    "start": "node lib/index.js"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
