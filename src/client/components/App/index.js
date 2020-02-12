@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import './style.scss';
 
 const App = () => {
-  const [sha, updateSHA] = useState('');
+  const [version, updateVersion] = useState('');
   useEffect(() => {
     const fetchSHA = async () => {
       const response = await fetch('/api/example');
       const json = await response.json();
-      updateSHA(json.sha);
+      updateVersion(json.version);
     };
 
     fetchSHA();
@@ -16,7 +16,7 @@ const App = () => {
   return (
     <div>
       <span>React Template</span>
-      <span>{`SHA: ${sha}`}</span>
+      <span>{`Version: ${version}`}</span>
     </div>
   );
 };
