@@ -1,7 +1,7 @@
 {
   "name": "react-template",
   "version": "1.0.0",
-  "description": "Template project for react config with server",
+  "description": "Template project for react with express",
   "scripts": {
     "build:client": "webpack --mode production",
     "build:server": "babel -d ./lib ./src/server",
@@ -14,7 +14,6 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "git-rev": "^0.2.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
