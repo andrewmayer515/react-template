@@ -11,3 +11,11 @@ Includes configuration for:
 - Heroku ready
 
 https://react-template--heroku.herokuapp.com/
+
+
+### Heroku INIT
+```
+$ heroku create [app-name]
+$ heroku config:set NPM_CONFIG_PRODUCTION=false
+$ git push heroku master
+```
