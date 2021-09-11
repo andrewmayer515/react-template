@@ -3,7 +3,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 module.exports = env => {
   const devtool = env.NODE_ENV !== 'production' ? 'inline-source-map' : '';
   return {
-    entry: './src/client/public/index.js',
+    entry: './src/client/index.js',
     module: {
       rules: [
         {
@@ -41,6 +41,7 @@ module.exports = env => {
       }),
     ],
     devServer: {
+      open: true,
       proxy: {
         '/api': 'http://localhost:5000',
       },

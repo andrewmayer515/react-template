@@ -3,6 +3,7 @@ import './style.scss';
 
 const App = () => {
   const [version, updateVersion] = useState('');
+
   useEffect(() => {
     const fetchSHA = async () => {
       const response = await fetch('/api/example');
@@ -14,10 +15,10 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <span>React Template</span>
       <span>{`Version: ${version}`}</span>
-    </div>
+    </>
   );
 };
 
